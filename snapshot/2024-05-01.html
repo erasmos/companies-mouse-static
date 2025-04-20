@@ -48,7 +48,13 @@
 
     <div class="tab-content m-2">
         <div id="tab-status" class="tab-pane active" role="tabpanel">
-            <div>
+            <nav class="nav nav-tabs">
+                <a class="nav-link active" data-bs-toggle="tab" data-bs-target="#tab-status-current">Current</a>
+                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-status-change">Change</a>
+            </nav>
+            <div class="tab-content m-2">
+                <div id="tab-status-current" class="tab-pane active" role="tabpanel">
+                    <div>
     <table class="table table-borderless table-striped table-hover">
         <thead>
         <tr>
@@ -340,9 +346,591 @@
         </tr>
     </table>
 </div>
+                </div>
+                <div id="tab-status-change" class="tab-pane" role="tabpanel">
+                    <div>
+    <table class="table table-borderless table-striped table-hover">
+        <thead>
+        <tr>
+            <th class="col-6"></th>
+            <th class="col-2">Current</th>
+            <th class="col-2">Previous</th>
+            <th class="col-2">Change</th>
+        </tr>
+        </thead>
+        <tr>
+            <td>
+                <span>Active → Active proposal to strike off</span>
+            </td>
+            <td>
+                <span>63,155</span>
+                <br/>
+                <span>81.66%</span>
+            </td>
+            <td>
+                <span>67,601</span>
+                <br/>
+                <span>84.80%</span>
+            </td>
+            <td class="text-danger">
+                <span>-4,446</span>
+                <br>
+                <span>-3.13%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Active proposal to strike off → Active</span>
+            </td>
+            <td>
+                <span>10,623</span>
+                <br/>
+                <span>13.74%</span>
+            </td>
+            <td>
+                <span>9,291</span>
+                <br/>
+                <span>11.65%</span>
+            </td>
+            <td class="text-success">
+                <span>1,332</span>
+                <br>
+                <span>2.08%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Active → Liquidation</span>
+            </td>
+            <td>
+                <span>2,566</span>
+                <br/>
+                <span>3.32%</span>
+            </td>
+            <td>
+                <span>2,079</span>
+                <br/>
+                <span>2.61%</span>
+            </td>
+            <td class="text-success">
+                <span>487</span>
+                <br>
+                <span>0.71%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Active proposal to strike off → Liquidation</span>
+            </td>
+            <td>
+                <span>554</span>
+                <br/>
+                <span>0.72%</span>
+            </td>
+            <td>
+                <span>395</span>
+                <br/>
+                <span>0.50%</span>
+            </td>
+            <td class="text-success">
+                <span>159</span>
+                <br>
+                <span>0.22%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Active → In administration</span>
+            </td>
+            <td>
+                <span>160</span>
+                <br/>
+                <span>0.21%</span>
+            </td>
+            <td>
+                <span>110</span>
+                <br/>
+                <span>0.14%</span>
+            </td>
+            <td class="text-success">
+                <span>50</span>
+                <br>
+                <span>0.06%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>In administration → In administration, with administrative receiver</span>
+            </td>
+            <td>
+                <span>79</span>
+                <br/>
+                <span>0.10%</span>
+            </td>
+            <td>
+                <span>76</span>
+                <br/>
+                <span>0.10%</span>
+            </td>
+            <td class="text-success">
+                <span>3</span>
+                <br>
+                <span>0.00%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Active → Live with receiver manager, and at least one charge</span>
+            </td>
+            <td>
+                <span>49</span>
+                <br/>
+                <span>0.06%</span>
+            </td>
+            <td>
+                <span>39</span>
+                <br/>
+                <span>0.05%</span>
+            </td>
+            <td class="text-success">
+                <span>10</span>
+                <br>
+                <span>0.01%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Live with receiver manager, and at least one charge → Active</span>
+            </td>
+            <td>
+                <span>46</span>
+                <br/>
+                <span>0.06%</span>
+            </td>
+            <td>
+                <span>28</span>
+                <br/>
+                <span>0.04%</span>
+            </td>
+            <td class="text-success">
+                <span>18</span>
+                <br>
+                <span>0.02%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>In administration → Liquidation</span>
+            </td>
+            <td>
+                <span>22</span>
+                <br/>
+                <span>0.03%</span>
+            </td>
+            <td>
+                <span>23</span>
+                <br/>
+                <span>0.03%</span>
+            </td>
+            <td class="text-danger">
+                <span>-1</span>
+                <br>
+                <span>0.00%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Active → Voluntary arrangement</span>
+            </td>
+            <td>
+                <span>20</span>
+                <br/>
+                <span>0.03%</span>
+            </td>
+            <td>
+                <span>11</span>
+                <br/>
+                <span>0.01%</span>
+            </td>
+            <td class="text-success">
+                <span>9</span>
+                <br>
+                <span>0.01%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Liquidation → Active proposal to strike off</span>
+            </td>
+            <td>
+                <span>9</span>
+                <br/>
+                <span>0.01%</span>
+            </td>
+            <td>
+                <span>4</span>
+                <br/>
+                <span>0.01%</span>
+            </td>
+            <td class="text-success">
+                <span>5</span>
+                <br>
+                <span>0.00%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Active proposal to strike off → Live with receiver manager, and at least one charge</span>
+            </td>
+            <td>
+                <span>9</span>
+                <br/>
+                <span>0.01%</span>
+            </td>
+            <td>
+                <span>8</span>
+                <br/>
+                <span>0.01%</span>
+            </td>
+            <td class="text-success">
+                <span>1</span>
+                <br>
+                <span>0.00%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Liquidation → Active</span>
+            </td>
+            <td>
+                <span>8</span>
+                <br/>
+                <span>0.01%</span>
+            </td>
+            <td>
+                <span>14</span>
+                <br/>
+                <span>0.02%</span>
+            </td>
+            <td class="text-danger">
+                <span>-6</span>
+                <br>
+                <span>0.00%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Voluntary arrangement → Liquidation</span>
+            </td>
+            <td>
+                <span>6</span>
+                <br/>
+                <span>0.01%</span>
+            </td>
+            <td>
+                <span>3</span>
+                <br/>
+                <span>0.00%</span>
+            </td>
+            <td class="text-success">
+                <span>3</span>
+                <br>
+                <span>0.00%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Active proposal to strike off → In administration</span>
+            </td>
+            <td>
+                <span>6</span>
+                <br/>
+                <span>0.01%</span>
+            </td>
+            <td>
+                <span>9</span>
+                <br/>
+                <span>0.01%</span>
+            </td>
+            <td class="text-danger">
+                <span>-3</span>
+                <br>
+                <span>0.00%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>In administration → Active</span>
+            </td>
+            <td>
+                <span>6</span>
+                <br/>
+                <span>0.01%</span>
+            </td>
+            <td>
+                <span>8</span>
+                <br/>
+                <span>0.01%</span>
+            </td>
+            <td class="text-danger">
+                <span>-2</span>
+                <br>
+                <span>0.00%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Voluntary arrangement → Active</span>
+            </td>
+            <td>
+                <span>6</span>
+                <br/>
+                <span>0.01%</span>
+            </td>
+            <td>
+                <span>10</span>
+                <br/>
+                <span>0.01%</span>
+            </td>
+            <td class="text-danger">
+                <span>-4</span>
+                <br>
+                <span>0.00%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>In administration, with receiver manager → In administration, with administrative receiver</span>
+            </td>
+            <td>
+                <span>2</span>
+                <br/>
+                <span>0.00%</span>
+            </td>
+            <td>
+                <span>1</span>
+                <br/>
+                <span>0.00%</span>
+            </td>
+            <td class="text-success">
+                <span>1</span>
+                <br>
+                <span>0.00%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Live with receiver manager, and at least one charge → Liquidation</span>
+            </td>
+            <td>
+                <span>2</span>
+                <br/>
+                <span>0.00%</span>
+            </td>
+            <td>
+                
+                <br/>
+                
+            </td>
+            <td>
+                
+                <br>
+                
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Voluntary arrangement, with receiver manager → Voluntary arrangement</span>
+            </td>
+            <td>
+                <span>1</span>
+                <br/>
+                <span>0.00%</span>
+            </td>
+            <td>
+                
+                <br/>
+                
+            </td>
+            <td>
+                
+                <br>
+                
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Active → In administration, with receiver manager</span>
+            </td>
+            <td>
+                <span>1</span>
+                <br/>
+                <span>0.00%</span>
+            </td>
+            <td>
+                
+                <br/>
+                
+            </td>
+            <td>
+                
+                <br>
+                
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Administration order → Active</span>
+            </td>
+            <td>
+                <span>1</span>
+                <br/>
+                <span>0.00%</span>
+            </td>
+            <td>
+                
+                <br/>
+                
+            </td>
+            <td>
+                
+                <br>
+                
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>In administration, with administrative receiver → Active</span>
+            </td>
+            <td>
+                <span>1</span>
+                <br/>
+                <span>0.00%</span>
+            </td>
+            <td>
+                
+                <br/>
+                
+            </td>
+            <td>
+                
+                <br>
+                
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>In administration, with receiver manager → Liquidation</span>
+            </td>
+            <td>
+                <span>1</span>
+                <br/>
+                <span>0.00%</span>
+            </td>
+            <td>
+                
+                <br/>
+                
+            </td>
+            <td>
+                
+                <br>
+                
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Live with receiver manager, and at least one charge → In administration, with receiver manager</span>
+            </td>
+            <td>
+                <span>1</span>
+                <br/>
+                <span>0.00%</span>
+            </td>
+            <td>
+                <span>1</span>
+                <br/>
+                <span>0.00%</span>
+            </td>
+            <td>
+                <span>0</span>
+                <br>
+                <span>0.00%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Receivership → Active</span>
+            </td>
+            <td>
+                <span>1</span>
+                <br/>
+                <span>0.00%</span>
+            </td>
+            <td>
+                
+                <br/>
+                
+            </td>
+            <td>
+                
+                <br>
+                
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Voluntary arrangement → In administration</span>
+            </td>
+            <td>
+                <span>1</span>
+                <br/>
+                <span>0.00%</span>
+            </td>
+            <td>
+                <span>1</span>
+                <br/>
+                <span>0.00%</span>
+            </td>
+            <td>
+                <span>0</span>
+                <br>
+                <span>0.00%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Voluntary arrangement → Voluntary arrangement, with receiver manager</span>
+            </td>
+            <td>
+                <span>1</span>
+                <br/>
+                <span>0.00%</span>
+            </td>
+            <td>
+                
+                <br/>
+                
+            </td>
+            <td>
+                
+                <br>
+                
+             </td>
+        </tr>
+    </table>
+</div>
+                </div>
+            </div>
         </div>
         <div id="tab-category" class="tab-pane" role="tabpanel">
-            <div>
+            <nav class="nav nav-tabs">
+                <a class="nav-link active" data-bs-toggle="tab" data-bs-target="#tab-category-current">Current</a>
+                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-category-change">Change</a>
+            </nav>
+            <div class="tab-content m-2">
+                <div id="tab-category-current" class="tab-pane active" role="tabpanel">
+                    <div>
     <table class="table table-borderless table-striped table-hover">
         <thead>
         <tr>
@@ -874,9 +1462,211 @@
         </tr>
     </table>
 </div>
+                </div>
+                <div id="tab-category-change" class="tab-pane" role="tabpanel">
+                    <div>
+    <table class="table table-borderless table-striped table-hover">
+        <thead>
+        <tr>
+            <th class="col-6"></th>
+            <th class="col-2">Current</th>
+            <th class="col-2">Previous</th>
+            <th class="col-2">Change</th>
+        </tr>
+        </thead>
+        <tr>
+            <td>
+                <span>Private limited by guarantee (no share capital), no use of limited exemption → Private limited by guarantee (no share capital)</span>
+            </td>
+            <td>
+                <span>15</span>
+                <br/>
+                <span>17.65%</span>
+            </td>
+            <td>
+                <span>18</span>
+                <br/>
+                <span>18.00%</span>
+            </td>
+            <td class="text-danger">
+                <span>-3</span>
+                <br>
+                <span>-0.35%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Public limited company → Private limited company</span>
+            </td>
+            <td>
+                <span>14</span>
+                <br/>
+                <span>16.47%</span>
+            </td>
+            <td>
+                <span>16</span>
+                <br/>
+                <span>16.00%</span>
+            </td>
+            <td class="text-danger">
+                <span>-2</span>
+                <br>
+                <span>0.47%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Private limited company → Community interest company</span>
+            </td>
+            <td>
+                <span>14</span>
+                <br/>
+                <span>16.47%</span>
+            </td>
+            <td>
+                <span>15</span>
+                <br/>
+                <span>15.00%</span>
+            </td>
+            <td class="text-danger">
+                <span>-1</span>
+                <br>
+                <span>1.47%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Private limited by guarantee (no share capital) → Community interest company</span>
+            </td>
+            <td>
+                <span>14</span>
+                <br/>
+                <span>16.47%</span>
+            </td>
+            <td>
+                <span>13</span>
+                <br/>
+                <span>13.00%</span>
+            </td>
+            <td class="text-success">
+                <span>1</span>
+                <br>
+                <span>3.47%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Private limited by guarantee (no share capital) → Private limited by guarantee (no share capital), no use of limited exemption</span>
+            </td>
+            <td>
+                <span>13</span>
+                <br/>
+                <span>15.29%</span>
+            </td>
+            <td>
+                <span>19</span>
+                <br/>
+                <span>19.00%</span>
+            </td>
+            <td class="text-danger">
+                <span>-6</span>
+                <br>
+                <span>-3.70%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Private limited company → Private unlimited company</span>
+            </td>
+            <td>
+                <span>7</span>
+                <br/>
+                <span>8.24%</span>
+            </td>
+            <td>
+                <span>6</span>
+                <br/>
+                <span>6.00%</span>
+            </td>
+            <td class="text-success">
+                <span>1</span>
+                <br>
+                <span>2.23%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Private unlimited company → Private limited company</span>
+            </td>
+            <td>
+                <span>4</span>
+                <br/>
+                <span>4.71%</span>
+            </td>
+            <td>
+                <span>3</span>
+                <br/>
+                <span>3.00%</span>
+            </td>
+            <td class="text-success">
+                <span>1</span>
+                <br>
+                <span>1.70%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Private limited company → Public limited company</span>
+            </td>
+            <td>
+                <span>2</span>
+                <br/>
+                <span>2.35%</span>
+            </td>
+            <td>
+                <span>3</span>
+                <br/>
+                <span>3.00%</span>
+            </td>
+            <td class="text-danger">
+                <span>-1</span>
+                <br>
+                <span>-0.64%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Private limited by guarantee (no share capital), no use of limited exemption → Community interest company</span>
+            </td>
+            <td>
+                <span>2</span>
+                <br/>
+                <span>2.35%</span>
+            </td>
+            <td>
+                <span>2</span>
+                <br/>
+                <span>2.00%</span>
+            </td>
+            <td>
+                <span>0</span>
+                <br>
+                <span>0.35%</span>
+             </td>
+        </tr>
+    </table>
+</div>
+                </div>
+            </div>
         </div>
         <div id="tab-accounts-category" class="tab-pane" role="tabpanel">
-            <div>
+            <nav class="nav nav-tabs">
+                <a class="nav-link active" data-bs-toggle="tab" data-bs-target="#tab-accounts-category-current">Current</a>
+                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-accounts-category-change">Change</a>
+            </nav>
+            <div class="tab-content m-2">
+                <div id="tab-accounts-category-current" class="tab-pane active" role="tabpanel">
+                    <div>
     <table class="table table-borderless table-striped table-hover">
         <thead>
         <tr>
@@ -1208,9 +1998,1711 @@
         </tr>
     </table>
 </div>
+                </div>
+                <div id="tab-accounts-category-change" class="tab-pane" role="tabpanel">
+                    <div>
+    <table class="table table-borderless table-striped table-hover">
+        <thead>
+        <tr>
+            <th class="col-6"></th>
+            <th class="col-2">Current</th>
+            <th class="col-2">Previous</th>
+            <th class="col-2">Change</th>
+        </tr>
+        </thead>
+        <tr>
+            <td>
+                <span>No accounts filed → Micro entity</span>
+            </td>
+            <td>
+                <span>16,632</span>
+                <br/>
+                <span>28.86%</span>
+            </td>
+            <td>
+                <span>19,235</span>
+                <br/>
+                <span>30.00%</span>
+            </td>
+            <td class="text-danger">
+                <span>-2,603</span>
+                <br>
+                <span>-1.14%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>No accounts filed → Dormant</span>
+            </td>
+            <td>
+                <span>10,252</span>
+                <br/>
+                <span>17.79%</span>
+            </td>
+            <td>
+                <span>10,571</span>
+                <br/>
+                <span>16.49%</span>
+            </td>
+            <td class="text-danger">
+                <span>-319</span>
+                <br>
+                <span>1.29%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>No accounts filed → Total exemption full</span>
+            </td>
+            <td>
+                <span>7,681</span>
+                <br/>
+                <span>13.33%</span>
+            </td>
+            <td>
+                <span>7,997</span>
+                <br/>
+                <span>12.47%</span>
+            </td>
+            <td class="text-danger">
+                <span>-316</span>
+                <br>
+                <span>0.85%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Total exemption full → Micro entity</span>
+            </td>
+            <td>
+                <span>4,153</span>
+                <br/>
+                <span>7.21%</span>
+            </td>
+            <td>
+                <span>4,854</span>
+                <br/>
+                <span>7.57%</span>
+            </td>
+            <td class="text-danger">
+                <span>-701</span>
+                <br>
+                <span>-0.36%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Micro entity → Total exemption full</span>
+            </td>
+            <td>
+                <span>3,551</span>
+                <br/>
+                <span>6.16%</span>
+            </td>
+            <td>
+                <span>4,212</span>
+                <br/>
+                <span>6.57%</span>
+            </td>
+            <td class="text-danger">
+                <span>-661</span>
+                <br>
+                <span>-0.40%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Dormant → Micro entity</span>
+            </td>
+            <td>
+                <span>2,989</span>
+                <br/>
+                <span>5.19%</span>
+            </td>
+            <td>
+                <span>3,197</span>
+                <br/>
+                <span>4.99%</span>
+            </td>
+            <td class="text-danger">
+                <span>-208</span>
+                <br>
+                <span>0.19%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Micro entity → Dormant</span>
+            </td>
+            <td>
+                <span>2,303</span>
+                <br/>
+                <span>4.00%</span>
+            </td>
+            <td>
+                <span>2,400</span>
+                <br/>
+                <span>3.74%</span>
+            </td>
+            <td class="text-danger">
+                <span>-97</span>
+                <br>
+                <span>0.25%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Dormant → Total exemption full</span>
+            </td>
+            <td>
+                <span>1,329</span>
+                <br/>
+                <span>2.31%</span>
+            </td>
+            <td>
+                <span>1,664</span>
+                <br/>
+                <span>2.60%</span>
+            </td>
+            <td class="text-danger">
+                <span>-335</span>
+                <br>
+                <span>-0.28%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Unaudited abridged → Total exemption full</span>
+            </td>
+            <td>
+                <span>1,191</span>
+                <br/>
+                <span>2.07%</span>
+            </td>
+            <td>
+                <span>1,421</span>
+                <br/>
+                <span>2.22%</span>
+            </td>
+            <td class="text-danger">
+                <span>-230</span>
+                <br>
+                <span>-0.15%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>No accounts filed → Unaudited abridged</span>
+            </td>
+            <td>
+                <span>1,009</span>
+                <br/>
+                <span>1.75%</span>
+            </td>
+            <td>
+                <span>1,174</span>
+                <br/>
+                <span>1.83%</span>
+            </td>
+            <td class="text-danger">
+                <span>-165</span>
+                <br>
+                <span>-0.08%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Total exemption full → Dormant</span>
+            </td>
+            <td>
+                <span>973</span>
+                <br/>
+                <span>1.69%</span>
+            </td>
+            <td>
+                <span>1,081</span>
+                <br/>
+                <span>1.69%</span>
+            </td>
+            <td class="text-danger">
+                <span>-108</span>
+                <br>
+                <span>0.00%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Total exemption full → Unaudited abridged</span>
+            </td>
+            <td>
+                <span>962</span>
+                <br/>
+                <span>1.67%</span>
+            </td>
+            <td>
+                <span>1,151</span>
+                <br/>
+                <span>1.80%</span>
+            </td>
+            <td class="text-danger">
+                <span>-189</span>
+                <br>
+                <span>-0.12%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Unaudited abridged → Micro entity</span>
+            </td>
+            <td>
+                <span>827</span>
+                <br/>
+                <span>1.43%</span>
+            </td>
+            <td>
+                <span>936</span>
+                <br/>
+                <span>1.46%</span>
+            </td>
+            <td class="text-danger">
+                <span>-109</span>
+                <br>
+                <span>-0.02%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Micro entity → Unaudited abridged</span>
+            </td>
+            <td>
+                <span>803</span>
+                <br/>
+                <span>1.39%</span>
+            </td>
+            <td>
+                <span>966</span>
+                <br/>
+                <span>1.51%</span>
+            </td>
+            <td class="text-danger">
+                <span>-163</span>
+                <br>
+                <span>-0.11%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Total exemption full → Small</span>
+            </td>
+            <td>
+                <span>235</span>
+                <br/>
+                <span>0.41%</span>
+            </td>
+            <td>
+                <span>335</span>
+                <br/>
+                <span>0.52%</span>
+            </td>
+            <td class="text-danger">
+                <span>-100</span>
+                <br>
+                <span>-0.11%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Dormant → Unaudited abridged</span>
+            </td>
+            <td>
+                <span>210</span>
+                <br/>
+                <span>0.36%</span>
+            </td>
+            <td>
+                <span>220</span>
+                <br/>
+                <span>0.34%</span>
+            </td>
+            <td class="text-danger">
+                <span>-10</span>
+                <br>
+                <span>0.02%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Small → Full</span>
+            </td>
+            <td>
+                <span>205</span>
+                <br/>
+                <span>0.36%</span>
+            </td>
+            <td>
+                <span>235</span>
+                <br/>
+                <span>0.37%</span>
+            </td>
+            <td class="text-danger">
+                <span>-30</span>
+                <br>
+                <span>-0.01%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>No accounts filed → Small</span>
+            </td>
+            <td>
+                <span>179</span>
+                <br/>
+                <span>0.31%</span>
+            </td>
+            <td>
+                <span>194</span>
+                <br/>
+                <span>0.30%</span>
+            </td>
+            <td class="text-danger">
+                <span>-15</span>
+                <br>
+                <span>0.00%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>No accounts filed → Full</span>
+            </td>
+            <td>
+                <span>174</span>
+                <br/>
+                <span>0.30%</span>
+            </td>
+            <td>
+                <span>109</span>
+                <br/>
+                <span>0.17%</span>
+            </td>
+            <td class="text-success">
+                <span>65</span>
+                <br>
+                <span>0.13%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Small → Audit exemption subsidiary</span>
+            </td>
+            <td>
+                <span>153</span>
+                <br/>
+                <span>0.27%</span>
+            </td>
+            <td>
+                <span>85</span>
+                <br/>
+                <span>0.13%</span>
+            </td>
+            <td class="text-success">
+                <span>68</span>
+                <br>
+                <span>0.13%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Full → Small</span>
+            </td>
+            <td>
+                <span>153</span>
+                <br/>
+                <span>0.27%</span>
+            </td>
+            <td>
+                <span>134</span>
+                <br/>
+                <span>0.21%</span>
+            </td>
+            <td class="text-success">
+                <span>19</span>
+                <br>
+                <span>0.05%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Small → Total exemption full</span>
+            </td>
+            <td>
+                <span>138</span>
+                <br/>
+                <span>0.24%</span>
+            </td>
+            <td>
+                <span>231</span>
+                <br/>
+                <span>0.36%</span>
+            </td>
+            <td class="text-danger">
+                <span>-93</span>
+                <br>
+                <span>-0.12%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Unaudited abridged → Dormant</span>
+            </td>
+            <td>
+                <span>130</span>
+                <br/>
+                <span>0.23%</span>
+            </td>
+            <td>
+                <span>152</span>
+                <br/>
+                <span>0.24%</span>
+            </td>
+            <td class="text-danger">
+                <span>-22</span>
+                <br>
+                <span>-0.01%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Total exemption full → Audit exemption subsidiary</span>
+            </td>
+            <td>
+                <span>127</span>
+                <br/>
+                <span>0.22%</span>
+            </td>
+            <td>
+                <span>134</span>
+                <br/>
+                <span>0.21%</span>
+            </td>
+            <td class="text-danger">
+                <span>-7</span>
+                <br>
+                <span>0.01%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Total exemption full → Full</span>
+            </td>
+            <td>
+                <span>110</span>
+                <br/>
+                <span>0.19%</span>
+            </td>
+            <td>
+                <span>126</span>
+                <br/>
+                <span>0.20%</span>
+            </td>
+            <td class="text-danger">
+                <span>-16</span>
+                <br>
+                <span>0.00%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Full → Audit exemption subsidiary</span>
+            </td>
+            <td>
+                <span>90</span>
+                <br/>
+                <span>0.16%</span>
+            </td>
+            <td>
+                <span>116</span>
+                <br/>
+                <span>0.18%</span>
+            </td>
+            <td class="text-danger">
+                <span>-26</span>
+                <br>
+                <span>-0.02%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Group → Full</span>
+            </td>
+            <td>
+                <span>79</span>
+                <br/>
+                <span>0.14%</span>
+            </td>
+            <td>
+                <span>57</span>
+                <br/>
+                <span>0.09%</span>
+            </td>
+            <td class="text-success">
+                <span>22</span>
+                <br>
+                <span>0.04%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>No accounts filed → Audit exemption subsidiary</span>
+            </td>
+            <td>
+                <span>76</span>
+                <br/>
+                <span>0.13%</span>
+            </td>
+            <td>
+                <span>50</span>
+                <br/>
+                <span>0.08%</span>
+            </td>
+            <td class="text-success">
+                <span>26</span>
+                <br>
+                <span>0.05%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Small → Dormant</span>
+            </td>
+            <td>
+                <span>69</span>
+                <br/>
+                <span>0.12%</span>
+            </td>
+            <td>
+                <span>52</span>
+                <br/>
+                <span>0.08%</span>
+            </td>
+            <td class="text-success">
+                <span>17</span>
+                <br>
+                <span>0.03%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Total exemption full → Group</span>
+            </td>
+            <td>
+                <span>68</span>
+                <br/>
+                <span>0.12%</span>
+            </td>
+            <td>
+                <span>86</span>
+                <br/>
+                <span>0.13%</span>
+            </td>
+            <td class="text-danger">
+                <span>-18</span>
+                <br>
+                <span>-0.01%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>No accounts filed → Group</span>
+            </td>
+            <td>
+                <span>67</span>
+                <br/>
+                <span>0.12%</span>
+            </td>
+            <td>
+                <span>75</span>
+                <br/>
+                <span>0.12%</span>
+            </td>
+            <td class="text-danger">
+                <span>-8</span>
+                <br>
+                <span>0.00%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Dormant → Small</span>
+            </td>
+            <td>
+                <span>54</span>
+                <br/>
+                <span>0.09%</span>
+            </td>
+            <td>
+                <span>60</span>
+                <br/>
+                <span>0.09%</span>
+            </td>
+            <td class="text-danger">
+                <span>-6</span>
+                <br>
+                <span>0.00%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Full → Group</span>
+            </td>
+            <td>
+                <span>52</span>
+                <br/>
+                <span>0.09%</span>
+            </td>
+            <td>
+                <span>39</span>
+                <br/>
+                <span>0.06%</span>
+            </td>
+            <td class="text-success">
+                <span>13</span>
+                <br>
+                <span>0.02%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Full → Medium</span>
+            </td>
+            <td>
+                <span>48</span>
+                <br/>
+                <span>0.08%</span>
+            </td>
+            <td>
+                <span>76</span>
+                <br/>
+                <span>0.12%</span>
+            </td>
+            <td class="text-danger">
+                <span>-28</span>
+                <br>
+                <span>-0.03%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Full → Total exemption full</span>
+            </td>
+            <td>
+                <span>46</span>
+                <br/>
+                <span>0.08%</span>
+            </td>
+            <td>
+                <span>74</span>
+                <br/>
+                <span>0.12%</span>
+            </td>
+            <td class="text-danger">
+                <span>-28</span>
+                <br>
+                <span>-0.03%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Full → Dormant</span>
+            </td>
+            <td>
+                <span>42</span>
+                <br/>
+                <span>0.07%</span>
+            </td>
+            <td>
+                <span>24</span>
+                <br/>
+                <span>0.04%</span>
+            </td>
+            <td class="text-success">
+                <span>18</span>
+                <br>
+                <span>0.03%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Audit exemption subsidiary → Total exemption full</span>
+            </td>
+            <td>
+                <span>40</span>
+                <br/>
+                <span>0.07%</span>
+            </td>
+            <td>
+                <span>36</span>
+                <br/>
+                <span>0.06%</span>
+            </td>
+            <td class="text-success">
+                <span>4</span>
+                <br>
+                <span>0.01%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Dormant → Full</span>
+            </td>
+            <td>
+                <span>39</span>
+                <br/>
+                <span>0.07%</span>
+            </td>
+            <td>
+                <span>40</span>
+                <br/>
+                <span>0.06%</span>
+            </td>
+            <td class="text-danger">
+                <span>-1</span>
+                <br>
+                <span>0.00%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Audit exemption subsidiary → Full</span>
+            </td>
+            <td>
+                <span>29</span>
+                <br/>
+                <span>0.05%</span>
+            </td>
+            <td>
+                <span>21</span>
+                <br/>
+                <span>0.03%</span>
+            </td>
+            <td class="text-success">
+                <span>8</span>
+                <br>
+                <span>0.01%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Audited abridged → Small</span>
+            </td>
+            <td>
+                <span>26</span>
+                <br/>
+                <span>0.05%</span>
+            </td>
+            <td>
+                <span>16</span>
+                <br/>
+                <span>0.02%</span>
+            </td>
+            <td class="text-success">
+                <span>10</span>
+                <br>
+                <span>0.02%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Dormant → Audit exemption subsidiary</span>
+            </td>
+            <td>
+                <span>26</span>
+                <br/>
+                <span>0.05%</span>
+            </td>
+            <td>
+                <span>25</span>
+                <br/>
+                <span>0.04%</span>
+            </td>
+            <td class="text-success">
+                <span>1</span>
+                <br>
+                <span>0.00%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Small → Group</span>
+            </td>
+            <td>
+                <span>26</span>
+                <br/>
+                <span>0.05%</span>
+            </td>
+            <td>
+                <span>25</span>
+                <br/>
+                <span>0.04%</span>
+            </td>
+            <td class="text-success">
+                <span>1</span>
+                <br>
+                <span>0.00%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Micro entity → Small</span>
+            </td>
+            <td>
+                <span>24</span>
+                <br/>
+                <span>0.04%</span>
+            </td>
+            <td>
+                <span>34</span>
+                <br/>
+                <span>0.05%</span>
+            </td>
+            <td class="text-danger">
+                <span>-10</span>
+                <br>
+                <span>-0.01%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Group → Total exemption full</span>
+            </td>
+            <td>
+                <span>23</span>
+                <br/>
+                <span>0.04%</span>
+            </td>
+            <td>
+                <span>33</span>
+                <br/>
+                <span>0.05%</span>
+            </td>
+            <td class="text-danger">
+                <span>-10</span>
+                <br>
+                <span>-0.01%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Audit exemption subsidiary → Dormant</span>
+            </td>
+            <td>
+                <span>20</span>
+                <br/>
+                <span>0.03%</span>
+            </td>
+            <td>
+                <span>44</span>
+                <br/>
+                <span>0.07%</span>
+            </td>
+            <td class="text-danger">
+                <span>-24</span>
+                <br>
+                <span>-0.03%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Group → Audit exemption subsidiary</span>
+            </td>
+            <td>
+                <span>18</span>
+                <br/>
+                <span>0.03%</span>
+            </td>
+            <td>
+                <span>11</span>
+                <br/>
+                <span>0.02%</span>
+            </td>
+            <td class="text-success">
+                <span>7</span>
+                <br>
+                <span>0.01%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Small → Unaudited abridged</span>
+            </td>
+            <td>
+                <span>18</span>
+                <br/>
+                <span>0.03%</span>
+            </td>
+            <td>
+                <span>12</span>
+                <br/>
+                <span>0.02%</span>
+            </td>
+            <td class="text-success">
+                <span>6</span>
+                <br>
+                <span>0.01%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Unaudited abridged → Full</span>
+            </td>
+            <td>
+                <span>16</span>
+                <br/>
+                <span>0.03%</span>
+            </td>
+            <td>
+                <span>20</span>
+                <br/>
+                <span>0.03%</span>
+            </td>
+            <td class="text-danger">
+                <span>-4</span>
+                <br>
+                <span>0.00%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Micro entity → Audit exemption subsidiary</span>
+            </td>
+            <td>
+                <span>14</span>
+                <br/>
+                <span>0.02%</span>
+            </td>
+            <td>
+                <span>11</span>
+                <br/>
+                <span>0.02%</span>
+            </td>
+            <td class="text-success">
+                <span>3</span>
+                <br>
+                <span>0.00%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Group → Small</span>
+            </td>
+            <td>
+                <span>13</span>
+                <br/>
+                <span>0.02%</span>
+            </td>
+            <td>
+                <span>23</span>
+                <br/>
+                <span>0.04%</span>
+            </td>
+            <td class="text-danger">
+                <span>-10</span>
+                <br>
+                <span>-0.01%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Unaudited abridged → Small</span>
+            </td>
+            <td>
+                <span>13</span>
+                <br/>
+                <span>0.02%</span>
+            </td>
+            <td>
+                <span>28</span>
+                <br/>
+                <span>0.04%</span>
+            </td>
+            <td class="text-danger">
+                <span>-15</span>
+                <br>
+                <span>-0.02%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Small → Audited abridged</span>
+            </td>
+            <td>
+                <span>11</span>
+                <br/>
+                <span>0.02%</span>
+            </td>
+            <td>
+                <span>9</span>
+                <br/>
+                <span>0.01%</span>
+            </td>
+            <td class="text-success">
+                <span>2</span>
+                <br>
+                <span>0.00%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Dormant → Group</span>
+            </td>
+            <td>
+                <span>11</span>
+                <br/>
+                <span>0.02%</span>
+            </td>
+            <td>
+                <span>12</span>
+                <br/>
+                <span>0.02%</span>
+            </td>
+            <td class="text-danger">
+                <span>-1</span>
+                <br>
+                <span>0.00%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Small → Micro entity</span>
+            </td>
+            <td>
+                <span>11</span>
+                <br/>
+                <span>0.02%</span>
+            </td>
+            <td>
+                <span>22</span>
+                <br/>
+                <span>0.03%</span>
+            </td>
+            <td class="text-danger">
+                <span>-11</span>
+                <br>
+                <span>-0.01%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Total exemption full → Medium</span>
+            </td>
+            <td>
+                <span>9</span>
+                <br/>
+                <span>0.02%</span>
+            </td>
+            <td>
+                <span>7</span>
+                <br/>
+                <span>0.01%</span>
+            </td>
+            <td class="text-success">
+                <span>2</span>
+                <br>
+                <span>0.00%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Audit exemption subsidiary → Micro entity</span>
+            </td>
+            <td>
+                <span>9</span>
+                <br/>
+                <span>0.02%</span>
+            </td>
+            <td>
+                <span>9</span>
+                <br/>
+                <span>0.01%</span>
+            </td>
+            <td>
+                <span>0</span>
+                <br>
+                <span>0.00%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Audit exemption subsidiary → Small</span>
+            </td>
+            <td>
+                <span>8</span>
+                <br/>
+                <span>0.01%</span>
+            </td>
+            <td>
+                <span>23</span>
+                <br/>
+                <span>0.04%</span>
+            </td>
+            <td class="text-danger">
+                <span>-15</span>
+                <br>
+                <span>-0.02%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Small → Medium</span>
+            </td>
+            <td>
+                <span>8</span>
+                <br/>
+                <span>0.01%</span>
+            </td>
+            <td>
+                <span>5</span>
+                <br/>
+                <span>0.01%</span>
+            </td>
+            <td class="text-success">
+                <span>3</span>
+                <br>
+                <span>0.00%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Unaudited abridged → Audit exemption subsidiary</span>
+            </td>
+            <td>
+                <span>8</span>
+                <br/>
+                <span>0.01%</span>
+            </td>
+            <td>
+                <span>12</span>
+                <br/>
+                <span>0.02%</span>
+            </td>
+            <td class="text-danger">
+                <span>-4</span>
+                <br>
+                <span>0.00%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Unaudited abridged → Audited abridged</span>
+            </td>
+            <td>
+                <span>7</span>
+                <br/>
+                <span>0.01%</span>
+            </td>
+            <td>
+                <span>16</span>
+                <br/>
+                <span>0.02%</span>
+            </td>
+            <td class="text-danger">
+                <span>-9</span>
+                <br>
+                <span>-0.01%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Full → Micro entity</span>
+            </td>
+            <td>
+                <span>5</span>
+                <br/>
+                <span>0.01%</span>
+            </td>
+            <td>
+                <span>15</span>
+                <br/>
+                <span>0.02%</span>
+            </td>
+            <td class="text-danger">
+                <span>-10</span>
+                <br>
+                <span>-0.01%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Unaudited abridged → Group</span>
+            </td>
+            <td>
+                <span>5</span>
+                <br/>
+                <span>0.01%</span>
+            </td>
+            <td>
+                <span>7</span>
+                <br/>
+                <span>0.01%</span>
+            </td>
+            <td class="text-danger">
+                <span>-2</span>
+                <br>
+                <span>0.00%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Full → Unaudited abridged</span>
+            </td>
+            <td>
+                <span>4</span>
+                <br/>
+                <span>0.01%</span>
+            </td>
+            <td>
+                <span>11</span>
+                <br/>
+                <span>0.02%</span>
+            </td>
+            <td class="text-danger">
+                <span>-7</span>
+                <br>
+                <span>-0.01%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Audit exemption subsidiary → Group</span>
+            </td>
+            <td>
+                <span>3</span>
+                <br/>
+                <span>0.01%</span>
+            </td>
+            <td>
+                <span>2</span>
+                <br/>
+                <span>0.00%</span>
+            </td>
+            <td class="text-success">
+                <span>1</span>
+                <br>
+                <span>0.00%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Audit exemption subsidiary → Unaudited abridged</span>
+            </td>
+            <td>
+                <span>3</span>
+                <br/>
+                <span>0.01%</span>
+            </td>
+            <td>
+                <span>3</span>
+                <br/>
+                <span>0.00%</span>
+            </td>
+            <td>
+                <span>0</span>
+                <br>
+                <span>0.00%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Micro entity → Full</span>
+            </td>
+            <td>
+                <span>3</span>
+                <br/>
+                <span>0.01%</span>
+            </td>
+            <td>
+                <span>9</span>
+                <br/>
+                <span>0.01%</span>
+            </td>
+            <td class="text-danger">
+                <span>-6</span>
+                <br>
+                <span>0.00%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Audited abridged → Unaudited abridged</span>
+            </td>
+            <td>
+                <span>3</span>
+                <br/>
+                <span>0.01%</span>
+            </td>
+            <td>
+                <span>5</span>
+                <br/>
+                <span>0.01%</span>
+            </td>
+            <td class="text-danger">
+                <span>-2</span>
+                <br>
+                <span>0.00%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Group → Medium</span>
+            </td>
+            <td>
+                <span>3</span>
+                <br/>
+                <span>0.01%</span>
+            </td>
+            <td>
+                <span>5</span>
+                <br/>
+                <span>0.01%</span>
+            </td>
+            <td class="text-danger">
+                <span>-2</span>
+                <br>
+                <span>0.00%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Total exemption full → No accounts filed</span>
+            </td>
+            <td>
+                <span>2</span>
+                <br/>
+                <span>0.00%</span>
+            </td>
+            <td>
+                <span>1</span>
+                <br/>
+                <span>0.00%</span>
+            </td>
+            <td class="text-success">
+                <span>1</span>
+                <br>
+                <span>0.00%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Micro entity → Group</span>
+            </td>
+            <td>
+                <span>2</span>
+                <br/>
+                <span>0.00%</span>
+            </td>
+            <td>
+                <span>6</span>
+                <br/>
+                <span>0.01%</span>
+            </td>
+            <td class="text-danger">
+                <span>-4</span>
+                <br>
+                <span>0.00%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Group → Micro entity</span>
+            </td>
+            <td>
+                <span>2</span>
+                <br/>
+                <span>0.00%</span>
+            </td>
+            <td>
+                <span>1</span>
+                <br/>
+                <span>0.00%</span>
+            </td>
+            <td class="text-success">
+                <span>1</span>
+                <br>
+                <span>0.00%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Dormant → Medium</span>
+            </td>
+            <td>
+                <span>1</span>
+                <br/>
+                <span>0.00%</span>
+            </td>
+            <td>
+                
+                <br/>
+                
+            </td>
+            <td>
+                
+                <br>
+                
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Audited abridged → Total exemption full</span>
+            </td>
+            <td>
+                <span>1</span>
+                <br/>
+                <span>0.00%</span>
+            </td>
+            <td>
+                <span>4</span>
+                <br/>
+                <span>0.01%</span>
+            </td>
+            <td class="text-danger">
+                <span>-3</span>
+                <br>
+                <span>0.00%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Audit exemption subsidiary → Audited abridged</span>
+            </td>
+            <td>
+                <span>1</span>
+                <br/>
+                <span>0.00%</span>
+            </td>
+            <td>
+                
+                <br/>
+                
+            </td>
+            <td>
+                
+                <br>
+                
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Audited abridged → Group</span>
+            </td>
+            <td>
+                <span>1</span>
+                <br/>
+                <span>0.00%</span>
+            </td>
+            <td>
+                
+                <br/>
+                
+            </td>
+            <td>
+                
+                <br>
+                
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Partial exemption → Audit exemption subsidiary</span>
+            </td>
+            <td>
+                <span>1</span>
+                <br/>
+                <span>0.00%</span>
+            </td>
+            <td>
+                
+                <br/>
+                
+            </td>
+            <td>
+                
+                <br>
+                
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>No accounts filed → Audited abridged</span>
+            </td>
+            <td>
+                <span>1</span>
+                <br/>
+                <span>0.00%</span>
+            </td>
+            <td>
+                <span>4</span>
+                <br/>
+                <span>0.01%</span>
+            </td>
+            <td class="text-danger">
+                <span>-3</span>
+                <br>
+                <span>0.00%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Medium → Full</span>
+            </td>
+            <td>
+                <span>1</span>
+                <br/>
+                <span>0.00%</span>
+            </td>
+            <td>
+                
+                <br/>
+                
+            </td>
+            <td>
+                
+                <br>
+                
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Total exemption full → Audited abridged</span>
+            </td>
+            <td>
+                <span>1</span>
+                <br/>
+                <span>0.00%</span>
+            </td>
+            <td>
+                <span>1</span>
+                <br/>
+                <span>0.00%</span>
+            </td>
+            <td>
+                <span>0</span>
+                <br>
+                <span>0.00%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>No accounts filed → Medium</span>
+            </td>
+            <td>
+                <span>1</span>
+                <br/>
+                <span>0.00%</span>
+            </td>
+            <td>
+                <span>1</span>
+                <br/>
+                <span>0.00%</span>
+            </td>
+            <td>
+                <span>0</span>
+                <br>
+                <span>0.00%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Audited abridged → Full</span>
+            </td>
+            <td>
+                <span>1</span>
+                <br/>
+                <span>0.00%</span>
+            </td>
+            <td>
+                <span>2</span>
+                <br/>
+                <span>0.00%</span>
+            </td>
+            <td class="text-danger">
+                <span>-1</span>
+                <br>
+                <span>0.00%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Unaudited abridged → Medium</span>
+            </td>
+            <td>
+                <span>1</span>
+                <br/>
+                <span>0.00%</span>
+            </td>
+            <td>
+                <span>4</span>
+                <br/>
+                <span>0.01%</span>
+            </td>
+            <td class="text-danger">
+                <span>-3</span>
+                <br>
+                <span>0.00%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Medium → Small</span>
+            </td>
+            <td>
+                <span>1</span>
+                <br/>
+                <span>0.00%</span>
+            </td>
+            <td>
+                
+                <br/>
+                
+            </td>
+            <td>
+                
+                <br>
+                
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Micro entity → Audited abridged</span>
+            </td>
+            <td>
+                <span>1</span>
+                <br/>
+                <span>0.00%</span>
+            </td>
+            <td>
+                <span>2</span>
+                <br/>
+                <span>0.00%</span>
+            </td>
+            <td class="text-danger">
+                <span>-1</span>
+                <br>
+                <span>0.00%</span>
+             </td>
+        </tr>
+    </table>
+</div>
+                </div>
+            </div>
         </div>
         <div id="tab-country-of-origin" class="tab-pane" role="tabpanel">
-            <div>
+            <nav class="nav nav-tabs">
+                <a class="nav-link active" data-bs-toggle="tab" data-bs-target="#tab-country-of-origin-current">Current</a>
+                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-country-of-origin-change">Change</a>
+            </nav>
+            <div class="tab-content m-2">
+                <div id="tab-country-of-origin-current" class="tab-pane active" role="tabpanel">
+                    <div>
     <table class="table table-borderless table-striped table-hover">
         <thead>
         <tr>
@@ -4882,6 +7374,82 @@
         </tr>
     </table>
 </div>
+                </div>
+                <div id="tab-country-of-origin-change" class="tab-pane" role="tabpanel">
+                    <div>
+    <table class="table table-borderless table-striped table-hover">
+        <thead>
+        <tr>
+            <th class="col-6"></th>
+            <th class="col-2">Current</th>
+            <th class="col-2">Previous</th>
+            <th class="col-2">Change</th>
+        </tr>
+        </thead>
+        <tr>
+            <td>
+                <span>Jersey → British Virgin Islands</span>
+            </td>
+            <td>
+                <span>1</span>
+                <br/>
+                <span>33.33%</span>
+            </td>
+            <td>
+                <span>2</span>
+                <br/>
+                <span>25.00%</span>
+            </td>
+            <td class="text-danger">
+                <span>-1</span>
+                <br>
+                <span>8.33%</span>
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Iceland → Ireland</span>
+            </td>
+            <td>
+                <span>1</span>
+                <br/>
+                <span>33.33%</span>
+            </td>
+            <td>
+                
+                <br/>
+                
+            </td>
+            <td>
+                
+                <br>
+                
+             </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Jersey → Switzerland</span>
+            </td>
+            <td>
+                <span>1</span>
+                <br/>
+                <span>33.33%</span>
+            </td>
+            <td>
+                
+                <br/>
+                
+            </td>
+            <td>
+                
+                <br>
+                
+             </td>
+        </tr>
+    </table>
+</div>
+                </div>
+            </div>
         </div>
         <div id="tab-industry-codes" class="tab-pane" role="tabpanel">
             <div>
